@@ -1,0 +1,84 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.26730.10
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1.Presentation.Layer", "1.Presentation.Layer", "{DBAC88FE-55B6-4DC9-8D99-E05906F47236}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2.Service.Layer", "2.Service.Layer", "{BF2217B9-7160-44D0-8B8B-EACEC745101B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3.BusinessLogic.Layer", "3.BusinessLogic.Layer", "{2621A0D2-6973-44A0-ADBB-D1E4BBE17A07}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "4.DataAccess.Layer", "4.DataAccess.Layer", "{569804FD-548D-4845-897C-86E835A2C4B3}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "5.Models.Layer", "5.Models.Layer", "{B746A4DD-DFC5-4AEC-A099-93CC0AE60DDF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExamenCBQA.Models", "ExamenCBQA.Models\ExamenCBQA.Models.csproj", "{FAE75324-CE78-40B3-B184-46B700954A5D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExamenCBQA.DataAccess", "ExamenCBQA.DataAccess\ExamenCBQA.DataAccess.csproj", "{312DBB5A-3194-4034-A0E9-EC9D6DB5C093}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExamenCBQA.BusinessLogic", "ExamenCBQA.BusinessLogic\ExamenCBQA.BusinessLogic.csproj", "{7092C67F-CAF6-493B-97AD-DF634717F0B3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExamenCBQA.Service", "ExamenCBQA.Service\ExamenCBQA.Service.csproj", "{BAE80DA3-B815-4A7D-9FCB-1CD5C78A79B9}"
+EndProject
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "ExamenCBQA.App", "ExamenCBQA.App\", "{AE7CCC8A-7608-4151-8FD6-3C12BF43B361}"
+	ProjectSection(WebsiteProperties) = preProject
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.0"
+		Debug.AspNetCompiler.VirtualPath = "/localhost_59062"
+		Debug.AspNetCompiler.PhysicalPath = "ExamenCBQA.App\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_59062\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/localhost_59062"
+		Release.AspNetCompiler.PhysicalPath = "ExamenCBQA.App\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_59062\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		VWDPort = "59062"
+		SlnRelativePath = "ExamenCBQA.App\"
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FAE75324-CE78-40B3-B184-46B700954A5D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FAE75324-CE78-40B3-B184-46B700954A5D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FAE75324-CE78-40B3-B184-46B700954A5D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FAE75324-CE78-40B3-B184-46B700954A5D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{312DBB5A-3194-4034-A0E9-EC9D6DB5C093}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{312DBB5A-3194-4034-A0E9-EC9D6DB5C093}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{312DBB5A-3194-4034-A0E9-EC9D6DB5C093}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{312DBB5A-3194-4034-A0E9-EC9D6DB5C093}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7092C67F-CAF6-493B-97AD-DF634717F0B3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7092C67F-CAF6-493B-97AD-DF634717F0B3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7092C67F-CAF6-493B-97AD-DF634717F0B3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7092C67F-CAF6-493B-97AD-DF634717F0B3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BAE80DA3-B815-4A7D-9FCB-1CD5C78A79B9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BAE80DA3-B815-4A7D-9FCB-1CD5C78A79B9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BAE80DA3-B815-4A7D-9FCB-1CD5C78A79B9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BAE80DA3-B815-4A7D-9FCB-1CD5C78A79B9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AE7CCC8A-7608-4151-8FD6-3C12BF43B361}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AE7CCC8A-7608-4151-8FD6-3C12BF43B361}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AE7CCC8A-7608-4151-8FD6-3C12BF43B361}.Release|Any CPU.ActiveCfg = Debug|Any CPU
+		{AE7CCC8A-7608-4151-8FD6-3C12BF43B361}.Release|Any CPU.Build.0 = Debug|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{FAE75324-CE78-40B3-B184-46B700954A5D} = {B746A4DD-DFC5-4AEC-A099-93CC0AE60DDF}
+		{312DBB5A-3194-4034-A0E9-EC9D6DB5C093} = {569804FD-548D-4845-897C-86E835A2C4B3}
+		{7092C67F-CAF6-493B-97AD-DF634717F0B3} = {2621A0D2-6973-44A0-ADBB-D1E4BBE17A07}
+		{BAE80DA3-B815-4A7D-9FCB-1CD5C78A79B9} = {BF2217B9-7160-44D0-8B8B-EACEC745101B}
+		{AE7CCC8A-7608-4151-8FD6-3C12BF43B361} = {DBAC88FE-55B6-4DC9-8D99-E05906F47236}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {2ECEC83C-5769-4C7B-86E3-56A2EAE5FAA7}
+	EndGlobalSection
+EndGlobal

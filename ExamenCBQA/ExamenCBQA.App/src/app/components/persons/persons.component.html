@@ -1,0 +1,69 @@
+<div class="row">
+  <div class="col-xs-12">
+    <div class="pull-right">
+      <a routerLink="/persons/create" class="btn btn-success">
+        <i class="fa fa-plus"></i> Create new employee
+      </a>
+    </div>
+  </div>
+</div>
+
+<br>
+
+<div class="row">
+
+  <div class="col-xs-12">
+
+    <div class="panel panel-default">
+
+      <div class="panel-heading">
+        <h4>
+          <i class="fa fa-users"></i> Employees
+        </h4>
+      </div>
+
+      <div class="panel-body">
+
+        <table class="table table-striped table-hover">
+          <thead>
+            <tr>
+              <th>First name</th>
+              <th>Last name</th>
+              <th>Gender</th>
+              <th>Age</th>
+              <th>Actions</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr *ngFor="let person of persons">
+              <td>
+                {{ person.firstName }}
+              </td>
+              <td>
+                {{ person.lastName }}
+              </td>
+              <td>
+                {{ person.gender }}
+              </td>
+              <td>
+                {{ person.age }}
+              </td>
+              <td>
+                <a class="btn btn-default" [routerLink]="['/persons', person.id]">
+                  <i class="fa fa-pencil"></i>
+                </a>
+                <button class="btn btn-danger" (click)="deletePerson(person)">
+                  <i class="fa fa-trash"></i>
+                </button>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</div>

@@ -1,0 +1,56 @@
+<form [formGroup]="form" (ngSubmit)="emitSubmitEvent()">
+
+  <div class="panel panel-default">
+
+    <div class="panel-heading">
+      <h4>{{ formTitle }}</h4>
+    </div>
+
+    <div class="panel-body">
+      <div class="form-group">
+        <label for="txtFirstName">First name</label>
+        <input formControlName="firstName" id="txtFirstName" class="form-control" type="text">
+        <div *ngIf="firstName.touched && firstName.invalid" class="alert alert-danger">
+          First name is required
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label for="txtLastName">Last name</label>
+        <input formControlName="lastName" id="txtLastName" class="form-control" type="text">
+        <div *ngIf="lastName.touched && lastName.invalid" class="alert alert-danger">
+          Last name is required
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label for="selGender">Gender</label>
+        <select formControlName="gender" id="selGender" class="form-control">
+          <option *ngFor="let g of genderCatalog" [value]="g.value">{{ g.text }}</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label for="txtAge">Age</label>
+        <input formControlName="age" id="txtAge" class="form-control" type="number">
+        <div *ngIf="age.touched && age.invalid" class="alert alert-danger">
+          First name is required
+        </div>
+      </div>
+
+    </div>
+
+    <div class="panel-footer">
+
+      <a routerLink="/persons" class="btn btn-default">
+        <i class="fa fa-arrow-left"></i> Cancelar
+      </a>
+      <button type="submit" class="btn btn-primary" [disabled]="!this.form.valid">
+        <i class="fa {{ buttonIcon }}"></i> {{ buttonText }}
+      </button>
+
+    </div>
+
+  </div>
+
+</form>
